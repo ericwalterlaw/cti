@@ -1,0 +1,45 @@
+
+.brand-statement {
+  width: 100%;
+  min-height: 205px;
+  padding: 28px 20px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+}
+
+.brand-statement-logo {
+  width: 125px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.brand-statement p {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.brand-statement p span {
+  color: var(--cti-red);
+}
+
+@media (max-width: 600px) {
+  .brand-statement {
+    min-height: 180px;
+    padding: 25px 20px 40px;
+  }
+
+  .brand-statement-logo {
+    width: 105px;
+  }
+
+  .brand-statement p {
+    font-size: 12px;
+  }
+}

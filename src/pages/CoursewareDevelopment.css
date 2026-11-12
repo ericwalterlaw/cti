@@ -1,0 +1,162 @@
+
+/* Courseware page */
+
+.courseware-page {
+  background: #fff;
+}
+
+.courseware-hero {
+  height: 385px;
+}
+
+.courseware-hero img {
+  width: min(100%, 600px);
+}
+
+/* Accordion spacing */
+
+.courseware-accordion {
+  padding-top: 2px;
+}
+
+.courseware-accordion .performance-accordion-item {
+  margin-bottom: 18px;
+}
+
+.courseware-accordion .performance-accordion-trigger {
+  margin-bottom: 22px;
+}
+
+.courseware-accordion .performance-accordion-panel {
+  padding-bottom: 35px;
+}
+
+/* Courseware media */
+
+.courseware-media {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courseware-media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Computer Based Training */
+
+.cbt-preview {
+  margin: 15px 0 20px;
+}
+
+.cbt-preview img {
+  width: 100%;
+}
+
+/* Mobile Learning */
+
+.mobile-learning-preview {
+  margin: 35px 0 25px;
+  min-height: 350px;
+}
+
+.mobile-learning-preview img {
+  width: min(100%, 600px);
+}
+
+/* Serious Gaming */
+
+.serious-gaming-content h3 {
+  color: #555;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin: 20px 0 14px;
+}
+
+.serious-gaming-content h3:first-child {
+  margin-top: 0;
+}
+
+.serious-gaming-aircraft {
+  min-height: 310px;
+  margin: 30px 0 35px;
+}
+
+.serious-gaming-aircraft img {
+  width: min(100%, 650px);
+}
+
+.serious-gaming-list {
+  list-style: square;
+  padding-left: 25px;
+  margin: 15px 0 25px;
+}
+
+.serious-gaming-list li {
+  padding-left: 5px;
+  margin-bottom: 12px;
+}
+
+.serious-gaming-list strong {
+  font-style: italic;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .courseware-hero {
+    height: 300px;
+  }
+
+  .mobile-learning-preview {
+    min-height: 250px;
+  }
+
+  .serious-gaming-aircraft {
+    min-height: 240px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .courseware-hero {
+    height: 240px;
+  }
+
+  .courseware-hero img {
+    width: min(100%, 260px);
+  }
+
+  .courseware-accordion .performance-accordion-trigger {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+
+  .courseware-accordion .performance-accordion-panel {
+    padding-left: 12px;
+  }
+
+  .mobile-learning-preview {
+    min-height: 180px;
+    margin: 20px 0;
+  }
+
+  .serious-gaming-content h3 {
+    font-size: 11px;
+  }
+
+  .serious-gaming-aircraft {
+    min-height: 170px;
+    margin: 20px 0;
+  }
+
+  .serious-gaming-list {
+    padding-left: 20px;
+  }
+}

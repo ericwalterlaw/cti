@@ -1,0 +1,144 @@
+
+
+.assistance-page {
+  background: #fff;
+}
+
+.assistance-hero {
+  height: 365px;
+}
+
+.assistance-hero img {
+  width: min(100%, 600px);
+}
+
+.assistance-main {
+  padding-top: 10px;
+}
+
+.assistance-main .performance-title {
+  margin-bottom: 17px;
+}
+
+.assistance-instructions {
+  width: 100%;
+  padding: 2px 0 3px;
+
+  border-top: 1px solid #e8e8e8;
+
+  color: #858585;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.training-organizations {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  border: 1px solid #f0f0f0;
+}
+
+.training-organization {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  color: #888;
+  text-decoration: none;
+
+  border-right: 1px solid #f1f1f1;
+
+  transition: background 200ms ease;
+}
+
+.training-organization:last-child {
+  border-right: none;
+}
+
+.training-organization:hover {
+  background: #fafafa;
+}
+
+.training-organization-name {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid #f1f1f1;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.training-organization-image {
+  min-height: 270px;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.training-organization-image img {
+  width: 100%;
+  max-width: 230px;
+  height: 220px;
+  object-fit: contain;
+  transition: transform 250ms ease;
+}
+
+.training-organization:hover img {
+  transform: scale(1.035);
+}
+
+@media (max-width: 768px) {
+  .assistance-hero {
+    height: 290px;
+  }
+
+  .training-organization-image {
+    min-height: 210px;
+  }
+
+  .training-organization-image img {
+    height: 175px;
+  }
+}
+
+@media (max-width: 600px) {
+  .assistance-hero {
+    height: 230px;
+  }
+
+  .assistance-hero img {
+    width: min(100%, 240px);
+  }
+
+  .assistance-instructions {
+    font-size: 10px;
+  }
+
+  .training-organizations {
+    grid-template-columns: 1fr;
+  }
+
+  .training-organization {
+    border-right: none;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .training-organization:last-child {
+    border-bottom: none;
+  }
+
+  .training-organization-image {
+    min-height: 190px;
+  }
+
+  .training-organization-image img {
+    height: 165px;
+  }
+}

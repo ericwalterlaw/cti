@@ -1,0 +1,273 @@
+
+.about-page {
+  width: 100%;
+  background: #fff;
+  color: #777;
+  overflow: hidden;
+}
+
+.about-container {
+  width: min(100% - 48px, 1180px);
+  margin: 0 auto;
+  padding: 70px 0 65px;
+}
+
+/* BREADCRUMB */
+
+.about-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  color: #777;
+}
+
+.about-breadcrumb a {
+  color: #e45b60;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-breadcrumb a:hover {
+  color: #333;
+}
+
+/* PAGE HEADER */
+
+.about-header {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: clamp(27px, 3vw, 38px);
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: 3px;
+  color: #858585;
+}
+
+/* INTRODUCTION */
+
+.about-introduction {
+  padding: 0 0 25px;
+}
+
+.about-introduction p,
+.about-quality p {
+  margin: 0 0 17px;
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 1.1px;
+}
+
+.about-building-image {
+  width: 100%;
+  margin: 12px 0 17px;
+  overflow: hidden;
+}
+
+.about-building-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* MISSION STATEMENT */
+
+.about-mission {
+  margin-top: 0;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.about-section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.about-section-heading h2 {
+  margin: 0;
+  color: #777;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.about-mission-content {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: start;
+  gap: 15px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px 65px;
+}
+
+.about-quote-icon {
+  color: #444;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-mission-content blockquote {
+  margin: 0;
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+/* COMMITMENT TO QUALITY */
+
+.about-quality {
+  padding: 28px 0 0;
+}
+
+.about-quality-heading {
+  padding: 0 0 12px;
+  border: none;
+}
+
+.about-quality-heading h2 {
+  color: #e45b60;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.about-quality p {
+  margin-bottom: 15px;
+}
+
+.about-quality ul {
+  margin: 15px 0 0;
+  padding-left: 38px;
+  list-style-type: square;
+}
+
+.about-quality li {
+  padding-left: 2px;
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .about-container {
+    width: min(100% - 40px, 760px);
+    padding: 55px 0 55px;
+  }
+
+  .about-introduction p,
+  .about-quality p,
+  .about-quality li {
+    font-size: 11px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .about-container {
+    width: calc(100% - 32px);
+    padding: 38px 0 45px;
+  }
+
+  .about-breadcrumb {
+    gap: 6px;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .about-header {
+    padding-bottom: 14px;
+  }
+
+  .about-header h1 {
+    font-size: 25px;
+    letter-spacing: 1.8px;
+  }
+
+  .about-introduction {
+    padding-bottom: 12px;
+  }
+
+  .about-introduction p,
+  .about-quality p {
+    font-size: 11px;
+    line-height: 1.75;
+    letter-spacing: 0.8px;
+    margin-bottom: 14px;
+  }
+
+  .about-building-image {
+    margin: 10px 0 15px;
+  }
+
+  .about-section-heading {
+    padding: 17px 0;
+  }
+
+  .about-section-heading h2 {
+    font-size: 15px;
+  }
+
+  .about-mission-content {
+    grid-template-columns: 30px 1fr;
+    gap: 12px;
+    padding: 35px 15px 50px;
+  }
+
+  .about-quote-icon {
+    font-size: 29px;
+  }
+
+  .about-mission-content blockquote {
+    font-size: 11px;
+    line-height: 1.8;
+    letter-spacing: 0.7px;
+  }
+
+  .about-quality {
+    padding-top: 25px;
+  }
+
+  .about-quality-heading {
+    padding: 0 0 12px;
+  }
+
+  .about-quality-heading h2 {
+    font-size: 16px;
+  }
+
+  .about-quality ul {
+    padding-left: 30px;
+  }
+
+  .about-quality li {
+    font-size: 11px;
+    line-height: 1.75;
+    margin-bottom: 7px;
+  }
+}

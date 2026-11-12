@@ -1,0 +1,17 @@
+
+:root {
+  --cti-red: #ed3438;
+  --cti-red-dark: #d92d32;
+
+  --cti-black: #292929;
+  --cti-dark: #303030;
+  --cti-grey: #888888;
+  --cti-light-grey: #eeeeee;
+  --cti-white: #ffffff;
+
+  --font-body: "Montserrat", sans-serif;
+
+  --page-gutter: clamp(18px, 4vw, 60px);
+
+  --transition: 250ms ease;
+}
